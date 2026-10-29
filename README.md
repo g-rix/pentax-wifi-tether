@@ -1,6 +1,6 @@
 # pentax-wifi-tether
 
-Using 'pentax-wifi-tether' connect to your Wi-Fi-capable PENTAX camera and download your date-sorted images.
+Use 'pentax-wifi-tether' to connect to your Wi-Fi-capable PENTAX camera and download your images which will be date-sorted.
 
 ![window](https://raw.githubusercontent.com/maruncz/pentax-wifi-tether/f72bdbf75eeb573afee6651c8abd5bdcae8507f9/window.png)
 
@@ -33,8 +33,9 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
 ## How
   1) Enable Wi-Fi on your laptop and camera.
   2) Connect your laptop to the camera's WiFi-AP. (See the camera's menus from credentials.)
-  3) Start the tether application, followed by the 'Connect' button
-  4) Press 'Start', when download has completed, press 'Stop'.
+  3) Start the tether application, followed by the 'Connect' button.
+  4) Press 'Start' once connection is confirmed, once download has completed, press 'Stop'.
+  5) Press 'Connection' to disconnect.
 
 ## Supported Pentax Cameras
   1) K70
@@ -43,4 +44,4 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
 ## Notes
   Tested with Ubuntu 20.04 and a Pentax K3 III.
   Ubuntu build-essentials also needed.
-  May also work for the Pentax KS-2, KP, K1 and K1 II.
+  May also work with the Pentax KS-2, KP, K1 and K1 II.
