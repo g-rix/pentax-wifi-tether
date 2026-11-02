@@ -1,6 +1,6 @@
 # Pentax-WiFi-Downloader
 
-Download your images from your WiFi-capable Pentax Camera.
+Download your images from your WiFi-capable Pentax Camera.  
 
 
 ![window](https://raw.githubusercontent.com/maruncz/pentax-wifi-tether/f72bdbf75eeb573afee6651c8abd5bdcae8507f9/window.png)
