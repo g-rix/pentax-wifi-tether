@@ -32,6 +32,12 @@ jobs:
           version: ${{ matrix.qt_version }}
           aqtsource: 'git+https://github.com/miurahr/aqtinstall.git@073e34d7c2ab4ae6961ed7cca690b3abd5ba5a7e'
 
+      - name: Configure
+        run:  qmake tether.pro CONFIG+=release
+      
+      - name: Build
+        run:  make -j 2   
+
       - name: Upload Binaries (macOS)
         uses: actions/upload-artifact@v6
         if: runner.os == 'macOS'
