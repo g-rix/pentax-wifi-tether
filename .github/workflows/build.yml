@@ -9,7 +9,7 @@ jobs:
     runs-on: macos-15
     strategy:
       matrix:
-        qt_version: [5.12.2]
+        qt_version: [6.8.1]
 
     steps:
       - name: Checkout Repository
