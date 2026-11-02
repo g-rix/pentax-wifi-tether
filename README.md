@@ -1,7 +1,7 @@
 # Pentax-WiFi-Downloader
 
-Use 'pentax-wifi-downloader' to connect to the WiFi AP of your PENTAX camera and download your 
-images. They will automatically be placed in date-sorted folder.
+Use 'pentax-wifi-downloader' to connect to the WiFi AP of your PENTAX camera 
+and download your images. They will automatically be placed in date-sorted folder(s).
 
 ![window](https://raw.githubusercontent.com/maruncz/pentax-wifi-tether/f72bdbf75eeb573afee6651c8abd5bdcae8507f9/window.png)
 
