@@ -1,12 +1,11 @@
 name: Build macOS
 
 on:
-  push:
-    branches: [ "main" ]
+   push:
+   branches: [ "main" ]
 
 jobs:
-  build:
-    # Use the latest macOS runner which has Xcode and Swift pre-installed
+   build:
     runs-on: macos-26
 
     steps:
