@@ -1,6 +1,7 @@
 #include "downloadqueue.h"
 #include "fileinfo.h"
 
+
 DownloadQueue::DownloadQueue(QObject *parent) : QObject(parent)
 {
     connect(&timer, &QTimer::timeout, this, &DownloadQueue::fetch);
@@ -84,3 +85,5 @@ void DownloadQueue::stop()
         queue.head()->abort();
     }
 }
+
+
