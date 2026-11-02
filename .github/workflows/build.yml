@@ -1,19 +1,19 @@
 name: Build macOS
 
 on:
-    push:
-     branches: [ "main" ]
+  push:
+    branches: ["main"]
 
 jobs:
-   build:
-    runs-on: macos-26
+  build:
+    runs-on: macos-15
+    strategy:
+      matrix:
+        qt_version: [6.8.1]
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v5
-        with:
-          submodules: 'recursive'
-          fetch-depth: 1
+        uses: actions/checkout@v6
 
       - name: Install create-dmg (macOS)
         if: runner.os == 'macOS'
@@ -32,17 +32,16 @@ jobs:
           aqtsource: 'git+https://github.com/miurahr/aqtinstall.git@073e34d7c2ab4ae6961ed7cca690b3abd5ba5a7e'
 
       - name: Configure
-        run:  qmake tether.pro CONFIG+=release
-      
+        run: qmake tether.pro CONFIG+=release
+
       - name: Build
-        run:  make -j 2   
+        run: make -j 2
 
       - name: Upload Binaries (macOS)
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v4
         if: runner.os == 'macOS'
         with:
           name: pwt-${{ runner.os }}-test
           path: build/installer-Release/*.dmg
           compression-level: 0
           if-no-files-found: error
-
