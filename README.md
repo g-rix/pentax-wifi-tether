@@ -2,9 +2,6 @@
 
 Download your images from your WiFi-capable Pentax Camera.
 
-Connect to the WiFi AP of your PENTAX camera.
-
-The images will automatically be placed into capture date-sorted folder(s).
 
 ![window](https://raw.githubusercontent.com/maruncz/pentax-wifi-tether/f72bdbf75eeb573afee6651c8abd5bdcae8507f9/window.png)
 
@@ -34,7 +31,8 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
     6) Run:
         ./tether
 
-## How
+## Image Download Instructions
+
   1) Enable Wi-Fi on your laptop/PC and camera.
   2) Connect your laptop/PC to the camera's WiFi-AP. (See the camera's menus from credentials.)
   3) Start the downloader application, followed by the 'Connect' button.
@@ -42,7 +40,10 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
   5) Press 'Start' once the connection is confirmed, press 'Stop' when the download has completed.
   6) Press 'Connection' again to disconnect.
 
+(The images will automatically be placed into capture date-sorted folder(s).)
+
 ## Supported Pentax Cameras
+
   1) K70
   2) K3 III
 
