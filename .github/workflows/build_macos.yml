@@ -41,3 +41,4 @@ jobs:
           path: build/installer-Release/*.dmg
           compression-level: 0
           if-no-files-found: error
+
