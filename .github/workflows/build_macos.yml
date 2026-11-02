@@ -4,17 +4,12 @@ permissions:
   contents: read
 
 on:
-  workflow_call:
-    inputs:
-      ci_version:
-        required: true
-        type: string
+  push:
+    branches: [ "main" ]
 
 jobs:
   build:
-    env:
-      CI_VERSION: ${{ inputs.ci_version }}
-    strategy:
+      strategy:
       fail-fast: false
       matrix:
         include:
@@ -51,7 +46,7 @@ jobs:
         uses: actions/upload-artifact@v6
         if: runner.os == 'macOS'
         with:
-          name: pwt-${{ runner.os }}-${{ env.CI_VERSION }}
+          name: pwt-${{ runner.os }}-test
           path: build/installer-Release/*.dmg
           compression-level: 0
           if-no-files-found: error
