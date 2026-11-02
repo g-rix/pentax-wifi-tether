@@ -47,3 +47,4 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
   May also work with the Pentax KS-2, KP, K1 and K1 II.
 
   Dummy
+  Dummy 2
