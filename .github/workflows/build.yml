@@ -43,20 +43,4 @@ jobs:
         with:
           name: pwt-${{ runner.os }}-test
           path: build/installer-Release/*.dmg
-          compression-level: 0
-          if-no-files-found: errorname: Build macOS
 
-on:
-  push:
-    branches: ["master"]
-
-jobs:
-  build:
-    runs-on: macos-15
-    strategy:
-      matrix:
-        qt_version: [6.8.1]
-
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v6
