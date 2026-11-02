@@ -1,4 +1,4 @@
-Name: Build macOS
+name: Build macOS
 permissions:
   contents: read
 on:
