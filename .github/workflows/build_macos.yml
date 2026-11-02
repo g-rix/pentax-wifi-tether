@@ -1,8 +1,6 @@
----
-name: Build macOS
+Name: Build macOS
 permissions:
   contents: read
-
 on:
   push:
     branches: [ "main" ]
