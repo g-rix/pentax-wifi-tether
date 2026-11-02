@@ -45,3 +45,5 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
   Tested with Ubuntu 20.04 and a Pentax K3 III.
   Ubuntu build-essentials also needed.
   May also work with the Pentax KS-2, KP, K1 and K1 II.
+
+  Dummy
