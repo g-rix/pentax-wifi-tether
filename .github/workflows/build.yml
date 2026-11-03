@@ -1,8 +1,6 @@
 name: Build MacOS .dmg
 
-on:
-  push:
-    branches: ["master"]
+on: workflow_dispatch
 
 jobs:
   build:
