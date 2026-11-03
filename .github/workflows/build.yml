@@ -1,4 +1,4 @@
-name: Build macOS
+name: Build MacOS .dmg
 
 on:
   push:
@@ -7,9 +7,6 @@ on:
 jobs:
   build:
     runs-on: macos-26
-    strategy:
-      matrix:
-        qt_version: [5.15.2]
 
     steps:
       - name: Checkout Repository
@@ -22,10 +19,10 @@ jobs:
           set-env: ${{ runner.os != 'Windows' }}
           add-tools-to-path: ${{ runner.os != 'Windows' }}
           tools: ${{ runner.os == 'Windows' && 'tools_qtcreator_gui' || '' }}
-          version: ${{ matrix.qt_version }}
+          version: 5.15.2
           aqtsource: 'git+https://github.com/miurahr/aqtinstall.git@073e34d7c2ab4ae6961ed7cca690b3abd5ba5a7e'
 
-      - name: Configure and build
+      - name: Configure and Build
         run: |
             mkdir build && cd build
             qmake ../tether.pro CONFIG+=release
@@ -33,13 +30,12 @@ jobs:
 
       - name: Run macdeployqt
         run: |
-          # Locate macdeployqt from your Qt installation path or let it run from environment
-          mkdir build
+          # make the .dmg image
+          cd build
           macdeployqt tether.app -dmg
 
-      - name: Upload Binaries (macOS)
+      - name: Upload Binaries
         uses: actions/upload-artifact@v4
-        if: runner.os == 'macOS'
         with:
           name: tether-${{ runner.os }}
           path: build/*.dmg
