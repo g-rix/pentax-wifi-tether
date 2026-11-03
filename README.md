@@ -1,6 +1,6 @@
 # Pentax-WiFi-Tether
 
-Download your image-files from your WiFi-capable Pentax Camera.  
+Download your photos from your WiFi-capable Pentax Camera.  
 
 ## On Linux
 
@@ -28,7 +28,9 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
            sudo apt-get install qt5-default qt5-qmake libqt5multimedia5-plugins qtmultimedia5-dev
     
     2) Clone the repo:
-          git clone https://github.com/maruncz/pentax-wifi-tether.git
+          git clone https://github.com/maruncz/pentax-wifi-tether.git (original)
+          or
+          git clone https://github.com/g-rix/pentax-wifi-tether.git (this)
        
     3) Change to that directory:
           cd pentax-wifi-tether
@@ -64,7 +66,8 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
 
   Tested on:
   * Linux laptop [Ubuntu 20.04] and a Pentax K3 III.
-  * MacOS Macbook Pro M3 [Sonoma: 14.8.9] and a Pentax K3 III.
+  * Macbook Pro M3 [Sonoma: 14.8.9] and a Pentax K3 III.
+  * iMac Intel 2020 [Sonoma: 14.8.9] and a Pentax K3 III.
   
  
   May also work with the Pentax KS-2, KP, K1 and K1 II.
