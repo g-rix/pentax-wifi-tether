@@ -1,4 +1,6 @@
-<img src="./Assets/g5915.png" alt="Project Logo" width="200"/>
+<p align="center">
+  <img src="./Assets/g5915.png" alt="Project Logo" width="200"/>
+</p>
 
 # Pentax-WiFi-Tether
 
