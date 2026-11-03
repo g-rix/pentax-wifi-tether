@@ -42,8 +42,8 @@ HEADERS += \
 FORMS += \
         mainwindow.ui
 
-QMAKE_LIBS_OPENGL -= -framework AGL
-LIBS -= -framework AGL
+QMAKE_LIBS_OPENGL -= -framework AGL -framework OpenGL
+LIBS -= -framework AGL -framework OpenGL
 QMAKE_MACOSX_DEPLOYMENT_TARGET = 12.0
 QMAKE_CXXFLAGS += -mmacosx-version-min=12.0
 QMAKE_LFLAGS += -mmacosx-version-min=12.0
