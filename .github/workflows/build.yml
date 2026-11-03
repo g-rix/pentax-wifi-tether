@@ -15,10 +15,7 @@ jobs:
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
         with:
-          cache: true
-          set-env: ${{ runner.os != 'Windows' }}
-          add-tools-to-path: ${{ runner.os != 'Windows' }}
-          tools: ${{ runner.os == 'Windows' && 'tools_qtcreator_gui' || '' }}
+          cache: true    
           version: 5.15.2
           aqtsource: 'git+https://github.com/miurahr/aqtinstall.git@073e34d7c2ab4ae6961ed7cca690b3abd5ba5a7e'
 
@@ -28,14 +25,13 @@ jobs:
             qmake ../tether.pro CONFIG+=release
             make -j 2
 
-      - name: Run macdeployqt
+      - name: Build .dmg image via macdeployqt
         run: |
-          # make the .dmg image
           cd build
           macdeployqt tether.app -dmg
 
-      - name: Upload Binaries
-        uses: actions/upload-artifact@v4
+      - name: Upload Binary image /dmg
+        uses: actions/upload-artifact@v7
         with:
           name: tether-${{ runner.os }}
           path: build/*.dmg
