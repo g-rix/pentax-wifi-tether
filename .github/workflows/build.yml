@@ -15,12 +15,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v6
 
-      - name: Install create-dmg (macOS)
-        if: runner.os == 'macOS'
-        run: |
-          brew install node
-          npm install --global create-dmg
-
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
         with:
@@ -40,12 +34,12 @@ jobs:
       - name: Run macdeployqt
         run: |
           # Locate macdeployqt from your Qt installation path or let it run from environment
-          macdeployqt build/tether.app -dmg
+          macdeployqt tether.app -dmg
 
       - name: Upload Binaries (macOS)
         uses: actions/upload-artifact@v4
         if: runner.os == 'macOS'
         with:
-          name: pwt-${{ runner.os }}-test
+          name: tether-${{ runner.os }}
           path: build/*.dmg
 
