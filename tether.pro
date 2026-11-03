@@ -48,7 +48,7 @@ QMAKE_MACOSX_DEPLOYMENT_TARGET = 12.0
 QMAKE_CXXFLAGS += -mmacosx-version-min=12.0
 QMAKE_LFLAGS += -mmacosx-version-min=12.0
 
-macx: ICON = ../Resources/tether.icns
+macx: ICON = Resources/tether.icns
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
