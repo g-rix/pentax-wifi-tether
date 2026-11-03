@@ -1,3 +1,6 @@
+![Project Logo](./Assets/g5915.png)
+
+
 # Pentax-WiFi-Tether
 
 Download your photos from your WiFi-capable Pentax Camera.  
