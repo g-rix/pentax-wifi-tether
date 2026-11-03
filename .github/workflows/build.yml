@@ -31,13 +31,11 @@ jobs:
           version: ${{ matrix.qt_version }}
           aqtsource: 'git+https://github.com/miurahr/aqtinstall.git@073e34d7c2ab4ae6961ed7cca690b3abd5ba5a7e'
 
-      - name: Configure
+      - name: Configure and build
         run: |
             mkdir build && cd build
             qmake ../tether.pro CONFIG+=release
-
-      - name: Build
-        run: make -j 2
+            make -j 2
 
       - name: Run macdeployqt
         run: |
