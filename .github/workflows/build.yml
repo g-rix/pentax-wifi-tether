@@ -34,6 +34,7 @@ jobs:
       - name: Run macdeployqt
         run: |
           # Locate macdeployqt from your Qt installation path or let it run from environment
+          mkdir build
           macdeployqt tether.app -dmg
 
       - name: Upload Binaries (macOS)
