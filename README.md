@@ -1,17 +1,17 @@
-# Pentax-WiFi-Downloader
+# Pentax-WiFi-Tether
 
-Download your images from your WiFi-capable Pentax Camera.  
+Download your image-files from your WiFi-capable Pentax Camera.  
 
 
 ![window](https://raw.githubusercontent.com/maruncz/pentax-wifi-tether/f72bdbf75eeb573afee6651c8abd5bdcae8507f9/window.png)
 
-## Qtcreator Build Instructions
+## Qtcreator Build Instructions [Original instructions]
 
 Download the opensource edition of Qt5 here https://www.qt.io/download and install Qt5.12.2 or newer and Qtcreator.
 
     Open `tether.pro` file in Qtcreator and build
 
-## Console Build Instructions
+## Console Build Instructions [Tested on Ubuntu 20.04]
 
     1) Install Qt package dependencies:
            sudo apt-get install qt5-default qt5-qmake libqt5multimedia5-plugins qtmultimedia5-dev
@@ -31,16 +31,16 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
     6) Run:
         ./tether
 
-## Image Download Instructions
+## Usage Instructions
 
-  1) Enable Wi-Fi on your laptop/PC and camera.
-  2) Connect your laptop/PC to the camera's WiFi-AP. (See the camera's menus from credentials.)
-  3) Start the downloader application, followed by the 'Connect' button.
-  4) Configure the required destination folder.
-  5) Press 'Start' once the connection is confirmed, press 'Stop' when the download has completed.
-  6) Press 'Connection' again to disconnect.
-
-(The images will automatically be placed into capture date-sorted folder(s).)
+  1) Connect your laptop/PC's WiFi to the camera's WiFi-AP. (See the camera's menus for WiFi credentials.)
+  2) Start the 'tether' application and configure the required destination folder.
+  3) Press the 'Connect' button, the connected camera will be confirmed.
+  4) Press 'Start' to commence the download. The camera's SD-card will be scanned and the filenames will appear on the 'Files' list.
+  5) The file download progress will be displayed as they are downloaded.
+  6) Press 'Stop' once the download has completed.
+  
+(The files will automatically be placed into date-sorted folder(s).)
 
 ## Supported Pentax Cameras
 
@@ -48,6 +48,9 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
   2) K3 III
 
 ## Notes
-  Tested with Ubuntu 20.04 and a Pentax K3 III.
+  Tested with:
+      Ubuntu 20.04 and a Pentax K3 III.
+      MacOS 14.8.9 Macbook Pro M3 and Pentax K3 III.
+  
   Ubuntu build-essentials also needed.
   May also work with the Pentax KS-2, KP, K1 and K1 II.
