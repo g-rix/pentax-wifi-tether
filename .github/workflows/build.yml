@@ -32,15 +32,38 @@ jobs:
           aqtsource: 'git+https://github.com/miurahr/aqtinstall.git@073e34d7c2ab4ae6961ed7cca690b3abd5ba5a7e'
 
       - name: Configure
-        run: qmake tether.pro CONFIG+=release
+        run: |
+            mkdir build && cd build
+            qmake ../tether.pro CONFIG+=release
 
       - name: Build
         run: make -j 2
 
+      - name: Run macdeployqt
+        run: |
+          # Locate macdeployqt from your Qt installation path or let it run from environment
+          macdeployqt build/tether.app -dmg-not-used # or standard deploy
+
+      - name: Create DMG
+        run: |
+          create-dmg \
+            --volname "YourAppName" \
+            --volicon "path/to/icon.icns" \
+            --window-pos 200 120 \
+            --window-size 600 400 \
+            --icon-size 100 \
+            --icon "thether.app" 175 190 \
+            --app-drop-link 425 190 \
+            "tether-Installer.dmg" \
+            "build/tether.app"
+
+
+
+    
       - name: Upload Binaries (macOS)
         uses: actions/upload-artifact@v4
         if: runner.os == 'macOS'
         with:
           name: pwt-${{ runner.os }}-test
-          path: build/installer-Release/*.dmg
+          path: build/*.dmg
 
