@@ -62,9 +62,9 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
 
 ## Notes
 
-  Tested with:
-  *) Ubuntu 20.04 and a Pentax K3 III.
-  *) MacOS 14.8.9 Macbook Pro M3 and Pentax K3 III.
+  Tested on:
+  * Linux laptop [Ubuntu 20.04] and a Pentax K3 III.
+  * MacOS Macbook Pro M3 [Sonoma: 14.8.9] and a Pentax K3 III.
   
  
   May also work with the Pentax KS-2, KP, K1 and K1 II.
