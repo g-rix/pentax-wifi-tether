@@ -42,19 +42,6 @@ jobs:
           # Locate macdeployqt from your Qt installation path or let it run from environment
           macdeployqt build/tether.app -dmg
 
-      - name: Create DMG
-        run: |
-          create-dmg \
-            --volname "tether" \
-            --volicon "path/to/icon.icns" \
-            --window-pos 200 120 \
-            --window-size 600 400 \
-            --icon-size 100 \
-            --icon "tether.app" 175 190 \
-            --app-drop-link 425 190 \
-            "tether-Installer.dmg" \
-            "build/tether.app"
-
       - name: Upload Binaries (macOS)
         uses: actions/upload-artifact@v4
         if: runner.os == 'macOS'
