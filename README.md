@@ -5,14 +5,14 @@ Download your image-files from your WiFi-capable Pentax Camera.
 ## On Linux
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/g-rix/pentax-wifi-tether/blob/master/Assets/linux_window.png">
+  <img width="400" height="430" src="https://github.com/g-rix/pentax-wifi-tether/blob/master/Assets/linux_window.png">
 </p>
 
 
 ## On MacOS
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/g-rix/pentax-wifi-tether/blob/master/Assets/MacOS_window.png">
+  <img width="400" height="423" src="https://github.com/g-rix/pentax-wifi-tether/blob/master/Assets/MacOS_window.png">
 </p>
 
 
@@ -42,6 +42,8 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
     6) Run:
         ./tether
 
+         Ubuntu build-essentials is also needed.
+
 ## Usage Instructions
 
   1) Connect your laptop/PC's WiFi to the camera's WiFi-AP. (See the camera's menus for WiFi credentials.)
@@ -59,9 +61,10 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
   2) K3 III
 
 ## Notes
+
   Tested with:
-      Ubuntu 20.04 and a Pentax K3 III.
-      MacOS 14.8.9 Macbook Pro M3 and Pentax K3 III.
+  *) Ubuntu 20.04 and a Pentax K3 III.
+  *) MacOS 14.8.9 Macbook Pro M3 and Pentax K3 III.
   
-  Ubuntu build-essentials also needed.
+ 
   May also work with the Pentax KS-2, KP, K1 and K1 II.
