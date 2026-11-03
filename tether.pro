@@ -42,6 +42,12 @@ HEADERS += \
 FORMS += \
         mainwindow.ui
 
+QMAKE_LIBS_OPENGL -= -framework AGL
+LIBS -= -framework AGL
+QMAKE_MACOSX_DEPLOYMENT_TARGET = 12.0
+QMAKE_CXXFLAGS += -mmacosx-version-min=12.0
+QMAKE_LFLAGS += -mmacosx-version-min=12.0
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
