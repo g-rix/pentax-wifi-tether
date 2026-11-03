@@ -4,12 +4,16 @@ Download your image-files from your WiFi-capable Pentax Camera.
 
 ## On Linux
 
-![window](https://github.com/g-rix/pentax-wifi-tether/blob/master/Assets/linux_window.png)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/g-rix/pentax-wifi-tether/blob/master/Assets/linux_window.png">
+</p>
 
 
 ## On MacOS
 
-![window](https://github.com/g-rix/pentax-wifi-tether/blob/master/Assets/MacOS_window.png)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/g-rix/pentax-wifi-tether/blob/master/Assets/MacOS_window.png">
+</p>
 
 
 ## Qtcreator Build Instructions [Original instructions]
