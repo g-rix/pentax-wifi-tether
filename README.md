@@ -6,14 +6,40 @@
 
 Download your photos from your WiFi-capable Pentax Camera.  
 
-## On Linux
+## Usage Instructions
+
+  1) Connect your laptop/PC's WiFi to the camera's WiFi-AP. (See the camera's menus for WiFi credentials.)
+  2) Start the 'tether' application and configure the required destination folder.
+  3) Press the 'Connect' button, the connected camera will be confirmed.
+  4) Press 'Start' to commence the download. The camera's SD-card will be scanned and the filenames will appear on the 'Files' list.
+  5) The file download progress will be displayed as they are downloaded.
+  6) Press 'Stop' once the download has completed.
+  
+(The files will automatically be placed into date-sorted folder(s).)
+
+## Supported Pentax Cameras
+
+  1) K70
+  2) K3 III
+
+## Notes
+
+  Tested on:
+  * Linux laptop [Ubuntu 20.04] and a Pentax K3 III.
+  * Macbook Pro M3 [Sonoma: 14.8.9] and a Pentax K3 III.
+  * iMac Intel 2020 [Sonoma: 14.8.9] and a Pentax K3 III.
+  
+
+## How it looks
+
+  ## On Linux
 
 <p align="center">
   <img width="400" height="430" src="https://github.com/g-rix/pentax-wifi-tether/blob/master/Assets/linux_window.png">
 </p>
 
 
-## On MacOS
+  ## On MacOS
 
 <p align="center">
   <img width="400" height="423" src="https://github.com/g-rix/pentax-wifi-tether/blob/master/Assets/MacOS_window.png">
@@ -50,28 +76,5 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
 
          Ubuntu build-essentials is also needed.
 
-## Usage Instructions
-
-  1) Connect your laptop/PC's WiFi to the camera's WiFi-AP. (See the camera's menus for WiFi credentials.)
-  2) Start the 'tether' application and configure the required destination folder.
-  3) Press the 'Connect' button, the connected camera will be confirmed.
-  4) Press 'Start' to commence the download. The camera's SD-card will be scanned and the filenames will appear on the 'Files' list.
-  5) The file download progress will be displayed as they are downloaded.
-  6) Press 'Stop' once the download has completed.
-  
-(The files will automatically be placed into date-sorted folder(s).)
-
-## Supported Pentax Cameras
-
-  1) K70
-  2) K3 III
-
-## Notes
-
-  Tested on:
-  * Linux laptop [Ubuntu 20.04] and a Pentax K3 III.
-  * Macbook Pro M3 [Sonoma: 14.8.9] and a Pentax K3 III.
-  * iMac Intel 2020 [Sonoma: 14.8.9] and a Pentax K3 III.
-  
  
   May also work with the Pentax KS-2, KP, K1 and K1 II.
