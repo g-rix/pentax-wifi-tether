@@ -21,18 +21,20 @@ Download your photos from your WiFi-capable Pentax Camera.
 
   1) K70
   2) K3 III
+     
+  May also work with the Pentax KS-2, KP, K1 and K1 II.
 
 ## Notes
 
   Tested on:
-  * Linux laptop [Ubuntu 20.04] and a Pentax K3 III.
-  * Macbook Pro M3 [Sonoma: 14.8.9] and a Pentax K3 III.
-  * iMac Intel 2020 [Sonoma: 14.8.9] and a Pentax K3 III.
+  * Linux laptop [Ubuntu 20.04] with a Pentax K3 III.
+  * Macbook Pro M3 [Sonoma: 14.8.9] with a Pentax K3 III.
+  * iMac Intel 2020 [Sonoma: 14.8.9] with a Pentax K3 III.
   
 
 ## How it looks
 
-  ## On Linux
+  ## On Ubuntu
 
 <p align="center">
   <img width="400" height="430" src="https://github.com/g-rix/pentax-wifi-tether/blob/master/Assets/linux_window.png">
@@ -52,6 +54,7 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
 
     Open `tether.pro` file in Qtcreator and build
 
+
 ## Console Build Instructions [Tested on Ubuntu 20.04]
 
     1) Install Qt package dependencies:
@@ -69,12 +72,9 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
           qmake tether.pro CONFIG+=release
     
     5) Build:
-         make -j 2
+         make 
          
     6) Run:
         ./tether
 
          Ubuntu build-essentials is also needed.
-
- 
-  May also work with the Pentax KS-2, KP, K1 and K1 II.
