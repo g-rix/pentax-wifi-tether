@@ -55,7 +55,7 @@ Download the opensource edition of Qt5 here https://www.qt.io/download and insta
     Open `tether.pro` file in Qtcreator and build
 
 
-## Console Build Instructions [Tested on Ubuntu 20.04]
+## Console Build Instructions [As built on Ubuntu 20.04]
 
     1) Install Qt package dependencies:
            sudo apt-get install qt5-default qt5-qmake libqt5multimedia5-plugins qtmultimedia5-dev
